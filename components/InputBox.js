@@ -22,9 +22,9 @@ function InputBox() {
     db.collection('posts')
       .add({
         message: inputRef.current.value,
-        name: session.user.name,
-        email: session.user.email,
-        image: session.user.image,
+        name: session.data.user.name,
+        email: session.data.user.email,
+        image: session.data.user.image,
         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       })
       .then((doc) => {
