@@ -14,7 +14,7 @@ function Login() {
       <h1
         onClick={() =>
           signIn(undefined, {
-            callbackUrl: '/',
+            callbackUrl: 'https://nextjs-fb-clone.vercel.app/',
           })
         }
         className="p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer"
